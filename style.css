@@ -111,6 +111,23 @@ body {
     text-align: left;
 }
 
+.content-box {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-main {
+    flex-grow: 1;
+    border: 1px solid red;
+}
+
+.content-side {
+    border: 1px solid red;
+    width: 260px;
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 930px;
@@ -138,5 +155,15 @@ body {
 
     .search-btn .search-btn__text {
         display: none;
+    }
+
+    .content-box {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .content-main, .content-side {
+        width: 100%;
     }
 }
