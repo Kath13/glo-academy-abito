@@ -30,9 +30,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
+    text-decoration: none;
 }
 
 .header-logo span {
+    color: rgba(10, 20, 58, 1);
     line-height: 28px;
     font-size: 24px;
     font-weight: 700;
@@ -283,17 +285,78 @@ body {
     text-decoration-line: underline;
 }
 
+.content-product {
+    display: flex;
+    flex-grow: 1;
+    gap: 30px;
+}
 
+.content-product__info-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 460px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.content-product__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: rgba(10, 20, 58, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content-product__img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.content-product__desc p {
+    margin: 0;
+    color: rgba(10, 20, 58, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content-product__summary-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.content-product__price {
+    margin-bottom: 25px;
+    color: rgba(10, 20, 58, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content-product__show-phone-btn {
+    width: 264px;
+    height: 54px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
 @media (max-width: 1200px) {
     .container {
         max-width: 930px;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        max-width: 730px;
     }
 
     .content-box {
@@ -302,16 +365,29 @@ body {
         align-items: stretch;
     }
 
+    .content-side {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 730px;
+    }
+
     .content-main, .content-side {
         width: 100%;
     }
 
-    .content-side {
-        min-width: 0;
-    }
-
     .content-main__list-item {
         width: calc((100% - 30px) / 2);
+    }
+
+    .content-product {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
