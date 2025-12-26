@@ -148,8 +148,8 @@ body {
 .content-main__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 30px;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 
