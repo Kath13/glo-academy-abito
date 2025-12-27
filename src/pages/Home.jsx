@@ -1,8 +1,8 @@
 import {Header} from '../components/Header/Header';
 import {Card} from '../components/Card/Card';
-import {cardArray, serviceList} from '../constants';
-import {Service} from '../components/Service/Service';
+import {cardArray} from '../constants';
 import {Footer} from '../components/Footer/Footer';
+import {Services} from '../components/Services/Services';
 
 export const Home = () => {
     return (
@@ -43,17 +43,8 @@ export const Home = () => {
                                 </div>
                             </div>
                             <div className="content-side">
-                                <h3 className="content-side__title">
-                                    Сервисы и услуги
-                                </h3>
                                 <div className="content-side__box">
-                                    <div className="content-side__list">
-                                        {
-                                            serviceList.map((service) => (
-                                                <Service key={service.id} service={service} />
-                                            ))
-                                        }
-                                    </div>
+                                    <Services />
                                     <Footer />
                                 </div>
                             </div>

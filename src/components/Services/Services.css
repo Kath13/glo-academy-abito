@@ -1,0 +1,21 @@
+.services__title {
+    margin-top: 0;
+    margin-bottom: 23px;
+    color: rgba(10, 20, 58, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 25px;
+    height: 100%;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+}
