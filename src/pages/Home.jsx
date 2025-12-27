@@ -2,6 +2,7 @@ import {Header} from '../components/Header/Header';
 import {Card} from '../components/Card/Card';
 import {cardArray, serviceList} from '../constants';
 import {Service} from '../components/Service/Service';
+import {Footer} from '../components/Footer/Footer';
 
 export const Home = () => {
     return (
@@ -53,11 +54,7 @@ export const Home = () => {
                                             ))
                                         }
                                     </div>
-                                    <div className="content-side__footer">
-                                        <p className="content-side__footer--item">ООО «Абито», 2011–2021</p>
-                                        <a href="#!" className="content-side__footer--item">Политика конфиденциальности</a>
-                                        <a href="#!" className="content-side__footer--item">Обработка данных</a>
-                                    </div>
+                                    <Footer />
                                 </div>
                             </div>
                         </div>
