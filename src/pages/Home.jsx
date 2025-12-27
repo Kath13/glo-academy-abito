@@ -1,4 +1,5 @@
 import {Header} from '../components/Header/Header';
+import {Card} from '../components/Card/Card';
 
 export const Home = () => {
     return (
@@ -24,18 +25,7 @@ export const Home = () => {
                                     Рекомендации для вас
                                 </h2>
                                 <div className="content-main__list">
-                                    {/*<a href="/product.html" className="content-main__list-item">*/}
-                                    {/*    <div className="content-main__list-item__img">*/}
-                                    {/*        <img src="/image/card-img.png" alt="Изображение товара Пвх материал 2й сорт" />*/}
-                                    {/*    </div>*/}
-                                    {/*    <h5 className="content-main__list-item__title">Пвх материал 2й сорт</h5>*/}
-                                    {/*    <strong className="content-main__list-item__price">170 ₽</strong>*/}
-                                    {/*    <div className="content-main__list-item__desc-box">*/}
-                                    {/*        <span*/}
-                                    {/*            className="content-main__list-item__desc">Казань, р-н Вахитовский</span>*/}
-                                    {/*        <span className="content-main__list-item__desc">10 июля 11:39</span>*/}
-                                    {/*    </div>*/}
-                                    {/*</a>*/}
+                                    <Card />
                                 </div>
                             </div>
                             <div className="content-side">
