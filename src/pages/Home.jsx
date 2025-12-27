@@ -1,5 +1,6 @@
 import {Header} from '../components/Header/Header';
 import {Card} from '../components/Card/Card';
+import {cardArray} from '../constants';
 
 export const Home = () => {
     return (
@@ -25,7 +26,18 @@ export const Home = () => {
                                     Рекомендации для вас
                                 </h2>
                                 <div className="content-main__list">
-                                    <Card />
+                                    {
+                                        cardArray.map((card) => (
+                                            <Card
+                                                key={card.id}
+                                                title={card.title}
+                                                price={card.price}
+                                                address={card.address}
+                                                date={card.date}
+                                                imageURL={card.imageURL}
+                                            />
+                                        ))
+                                    }
                                 </div>
                             </div>
                             <div className="content-side">

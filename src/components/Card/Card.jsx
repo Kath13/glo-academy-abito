@@ -1,18 +1,17 @@
 import './Card.css'
 
-export const Card = () => {
+export const Card = ({title, price, address, date, imageURL}) => {
     return (
         <>
             <a href="/product.html" className="content-main__list-item">
                 <div className="content-main__list-item--img">
-                    <img src="/image/card-img.png" alt="Изображение товара Пвх материал 2й сорт" />
+                    <img src={`/image/${imageURL}`} alt={`Изображение товара ${title}`}/>
                 </div>
-                <h5 className="content-main__list-item--title">Пвх материал 2й сорт</h5>
-                <strong className="content-main__list-item--price">170 ₽</strong>
+                <h5 className="content-main__list-item--title">{title}</h5>
+                <strong className="content-main__list-item--price">{price} ₽</strong>
                 <div className="content-main__list-item--desc-box">
-                                            <span
-                                                className="content-main__list-item--desc">Казань, р-н Вахитовский</span>
-                    <span className="content-main__list-item--desc">10 июля 11:39</span>
+                    <span className="content-main__list-item--desc">{address}</span>
+                    <span className="content-main__list-item--desc">{date}</span>
                 </div>
             </a>
         </>
