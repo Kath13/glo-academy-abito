@@ -144,28 +144,6 @@ body {
   border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
 
-.content-side__list-item--title {
-  margin-top: 7px;
-  margin-bottom: 5px;
-  color: rgba(10, 20, 58, 1);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.content-side__list-item--desc {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: rgba(10, 20, 58, 1);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
 .content-side__footer {
   display: flex;
   flex-direction: column;

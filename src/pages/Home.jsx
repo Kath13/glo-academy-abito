@@ -1,6 +1,7 @@
 import {Header} from '../components/Header/Header';
 import {Card} from '../components/Card/Card';
-import {cardArray} from '../constants';
+import {cardArray, serviceList} from '../constants';
+import {Service} from '../components/Service/Service';
 
 export const Home = () => {
     return (
@@ -46,31 +47,11 @@ export const Home = () => {
                                 </h3>
                                 <div className="content-side__box">
                                     <div className="content-side__list">
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/image/site-info1.svg"
-                                                 alt=""/>
-                                            <h5 className="content-side__list-item--title">Доставка</h5>
-                                            <p className="content-side__list-item--desc">Проверка при получении и
-                                                возможность бесплатно
-                                                вернуть товар</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/image/site-info2.svg"
-                                                 alt=""/>
-                                            <h5 className="content-side__list-item--title">Автотека</h5>
-                                            <p className="content-side__list-item--desc">Отчёт с историей авто: пробег,
-                                                владельцы,
-                                                сведения о залоге, ДТП и ремонтах</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/image/site-info3.svg"
-                                                 alt=""/>
-                                            <h5 className="content-side__list-item--title">Онлайн-бронирование
-                                                жилья</h5>
-                                            <p className="content-side__list-item--desc">Посуточная аренда квартир и
-                                                домов: большой
-                                                выбор вариантов для поездок по России</p>
-                                        </div>
+                                        {
+                                            serviceList.map((service) => (
+                                                <Service key={service.id} service={service} />
+                                            ))
+                                        }
                                     </div>
                                     <div className="content-side__footer">
                                         <p className="content-side__footer--item">ООО «Абито», 2011–2021</p>

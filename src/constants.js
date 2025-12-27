@@ -48,3 +48,24 @@ export const cardArray = [
         imageURL: 'card-img.png'
     },
 ]
+
+export const serviceList = [
+    {
+        id: 0,
+        title: 'Доставка',
+        description: 'Проверка при получении и возможность бесплатно вернуть товар',
+        imageURL: 'site-info1.svg'
+    },
+    {
+        id: 1,
+        title: 'Автотека',
+        description: 'Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах',
+        imageURL: 'site-info2.svg'
+    },
+    {
+        id: 2,
+        title: 'Онлайн-бронирование жилья',
+        description: 'Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России',
+        imageURL: 'site-info3.svg'
+    },
+]
