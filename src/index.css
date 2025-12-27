@@ -14,41 +14,7 @@ body {
   padding: 0 12px;
 }
 
-.header {
-  padding-top: 30px;
-  padding-bottom: 24px;
-}
 
-.header-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-}
-
-.header-logo span {
-  color: rgba(10, 20, 58, 1);
-  line-height: 28px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.header-content {
-  display: flex;
-}
-
-.header-burger {
-  width: 30px;
-  height: 19px;
-  display: none;
-}
 
 .btn {
   line-height: 16px;
@@ -393,14 +359,6 @@ body {
 @media (max-width: 786px) {
   .container {
     max-width: 100%;
-  }
-
-  .header-controls {
-    display: none;
-  }
-
-  .header-burger {
-    display: block;
   }
 
   .search-btn .search-btn__text {
