@@ -78,6 +78,12 @@ body {
   height: 100%;
 }
 
+.product-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 930px;

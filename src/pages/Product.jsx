@@ -5,10 +5,11 @@ import {Search} from '../components/Search/Search';
 import {useParams} from 'react-router';
 import {cardArray} from '../constants';
 import {ProductInfo} from '../components/ProductInfo/ProductInfo';
+import {NotFound} from '../components/NotFound/NotFound';
 
 export const Product = () => {
     const {id} = useParams()
-    const product = cardArray.find(item => item.id == id)
+    const product = cardArray.find(item => item.id === +id)
 
     return (
         <>
@@ -18,7 +19,9 @@ export const Product = () => {
                 <section className="content">
                     <div className="container">
                         <div className="content-box">
-                            <ProductInfo product={product} />
+                            <div className="product-container">
+                                {product ? <ProductInfo product={product}/> : <NotFound />}
+                            </div>
                             <div className="content-side">
                                 <div className="content-side__box">
                                     <Services />
