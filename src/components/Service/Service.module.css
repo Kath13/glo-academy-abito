@@ -1,4 +1,10 @@
-.service--title {
+.container {
+}
+
+.serviceImg {
+}
+
+.serviceTitle {
     margin-top: 7px;
     margin-bottom: 5px;
     color: rgba(10, 20, 58, 1);
@@ -9,7 +15,7 @@
     text-align: left;
 }
 
-.service--desc {
+.serviceDesc {
     margin-top: 0;
     margin-bottom: 0;
     color: rgba(10, 20, 58, 1);

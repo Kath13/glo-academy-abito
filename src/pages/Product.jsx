@@ -1,3 +1,4 @@
+import styles from './Product.module.css'
 import {useParams} from 'react-router';
 import {cardArray} from '../constants';
 import {ProductInfo} from '../components/ProductInfo/ProductInfo';
@@ -9,7 +10,7 @@ export const Product = () => {
 
     return (
         <>
-            <div className="product-container">
+            <div className={styles.container}>
                 {product ? <ProductInfo product={product}/> : <ProductNotFound/>}
             </div>
         </>

@@ -1,14 +1,14 @@
 import {serviceList} from '../../constants';
 import {Service} from '../Service/Service';
-import './Services.css'
+import styles from './Services.module.css'
 
 export const Services = () => {
     return (
         <>
-            <h3 className="services__title">
+            <h3 className={styles.services__title}>
                 Сервисы и услуги
             </h3>
-            <div className="services__list">
+            <div className={styles.services__list}>
                 {
                     serviceList.map((service) => (
                         <Service key={service.id} service={service} />

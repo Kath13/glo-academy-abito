@@ -1,4 +1,4 @@
-import './Search.css'
+import styles from './Search.module.css'
 import {useState} from 'react';
 
 export const Search = ({onSearch}) => {
@@ -14,20 +14,20 @@ export const Search = ({onSearch}) => {
 
     return (
         <>
-            <section className="search">
+            <section className={styles.search}>
                 <div className="container">
-                    <div className="search-box">
+                    <div className={styles.searchBox}>
                         <input
                             type="text"
                             value={searchText}
                             onChange={handleSearch}
                             placeholder="Поиск по объявлениям"/>
                         <button
-                            className="btn btn-primary search-btn"
+                            className={`btn btn-primary ${styles.searchBtn}`}
                             onClick={handleClick}
                         >
-                            <img src="/image/search.svg" alt="Search" className="search-btn__icon"/>
-                            <span className="search-btn__text">Найти</span>
+                            <img src="/image/search.svg" alt="Search" className={styles.searchBtn__icon}/>
+                            <span className={styles.searchBtn__text}>Найти</span>
                         </button>
                     </div>
                 </div>

@@ -3,13 +3,13 @@
     padding-bottom: 24px;
 }
 
-.header-box {
+.headerBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-logo {
+.headerLogo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -17,29 +17,29 @@
     text-decoration: none;
 }
 
-.header-logo span {
+.headerLogo span {
     color: rgba(10, 20, 58, 1);
     line-height: 28px;
     font-size: 24px;
     font-weight: 700;
 }
 
-.header-content {
+.headerContent {
     display: flex;
 }
 
-.header-burger {
+.headerBurger {
     width: 30px;
     height: 19px;
     display: none;
 }
 
 @media (max-width: 786px) {
-    .header-controls {
+    .headerControls {
         display: none;
     }
 
-    .header-burger {
+    .headerBurger {
         display: block;
     }
 }

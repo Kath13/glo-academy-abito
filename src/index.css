@@ -48,31 +48,9 @@ body {
   flex-grow: 1;
 }
 
-.content-main__container {
-
-}
-
 .content-side {
   width: 260px;
   min-width: 260px;
-}
-
-.content-main__title {
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: rgba(10, 20, 58, 1);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.content-main__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 30px;
 }
 
 .content-side__box {
@@ -80,12 +58,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-}
-
-.product-container {
-  display: flex;
-  flex-grow: 1;
-  gap: 30px;
 }
 
 @media (max-width: 1200px) {

@@ -1,4 +1,4 @@
-.product__info-box {
+.infoBox {
     display: flex;
     flex-direction: column;
     flex-basis: 460px;
@@ -6,7 +6,7 @@
     flex-shrink: 1;
 }
 
-.product__title {
+.title {
     margin-top: 0;
     margin-bottom: 25px;
     color: rgba(10, 20, 58, 1);
@@ -17,12 +17,12 @@
     text-align: left;
 }
 
-.product__img {
+.productImg {
     margin-bottom: 20px;
     width: 100%;
 }
 
-.product__desc p {
+.desc p {
     margin: 0;
     color: rgba(10, 20, 58, 1);
     font-size: 14px;
@@ -32,7 +32,7 @@
     text-align: left;
 }
 
-.product__summary-box {
+.summaryBox {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
@@ -40,7 +40,7 @@
     width: 300px;
 }
 
-.product__price {
+.price {
     margin-bottom: 25px;
     color: rgba(10, 20, 58, 1);
     font-size: 24px;
@@ -50,7 +50,7 @@
     text-align: left;
 }
 
-.product__show-phone-btn {
+.showPhoneBtn {
     width: 264px;
     height: 54px;
     color: rgba(255, 255, 255, 1);

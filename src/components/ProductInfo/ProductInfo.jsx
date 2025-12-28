@@ -1,23 +1,23 @@
-import './ProductInfo.css'
+import styles from './ProductInfo.module.css'
 
 export const ProductInfo = ({product}) => {
     const {title, imageURL, price, description} = product;
 
     return (
         <>
-            <div className="product__info-box">
-                <h3 className="product__title">
+            <div className={styles.infoBox}>
+                <h3 className={styles.title}>
                     {title}
                 </h3>
-                <img className="product__img" src={`/image/${imageURL}`}
+                <img className={styles.productImg} src={`/image/${imageURL}`}
                      alt="Product image"/>
-                <div className="product__desc">
+                <div className={styles.desc}>
                     <p>{description}</p>
                 </div>
             </div>
-            <div className="product__summary-box">
-                <span className="product__price">{price} ₽</span>
-                <button className="product__show-phone-btn btn btn-primary">Показать телефон
+            <div className={styles.summaryBox}>
+                <span className={styles.price}>{price} ₽</span>
+                <button className={`${styles.showPhoneBtn} btn btn-primary`}>Показать телефон
                 </button>
             </div>
         </>
