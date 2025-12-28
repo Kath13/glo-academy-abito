@@ -5,16 +5,23 @@ import {Home} from './pages/Home';
 import {createBrowserRouter} from 'react-router';
 import {RouterProvider} from 'react-router/dom';
 import {Product} from './pages/Product';
+import {Layout} from './layouts/Layout';
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />,
-    },
+        element: <Layout />,
+        children: [
+            {
+                path: "/",
+                element: <Home />,
+            },
 
-    {
-        path: "/product/:id",
-        element: <Product />,
+            {
+                path: "/product/:id",
+                element: <Product />,
+            },
+        ]
     },
 ]);
 
