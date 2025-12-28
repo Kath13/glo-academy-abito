@@ -32,7 +32,9 @@ export const Layout = () => {
                 <section className="content">
                     <div className="container">
                         <div className="content-box">
-                            <Outlet context={{products}}/>
+                            <div className="content-main">
+                                <Outlet context={{products}}/>
+                            </div>
                             <div className="content-side">
                                 <div className="content-side__box">
                                     <Services/>

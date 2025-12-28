@@ -9,7 +9,7 @@ const cardArray = [
         price: 170,
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
     {
         id: 1,
@@ -17,7 +17,7 @@ const cardArray = [
         price: 171,
         address: 'Казань, р-н Вахитовский 1',
         date: '11 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ const cardArray = [
         price: 172,
         address: 'Казань, р-н Вахитовский 2',
         date: '12 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const cardArray = [
         price: 173,
         address: 'Казань, р-н Вахитовский 3',
         date: '13 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const cardArray = [
         price: 174,
         address: 'Казань, р-н Вахитовский 4',
         date: '14 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const cardArray = [
         price: 175,
         address: 'Казань, р-н Вахитовский 5',
         date: '15 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-404.png'
     },
 ]
 

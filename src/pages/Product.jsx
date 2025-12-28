@@ -1,7 +1,7 @@
 import {useParams} from 'react-router';
 import {cardArray} from '../constants';
 import {ProductInfo} from '../components/ProductInfo/ProductInfo';
-import {NotFound} from '../components/NotFound/NotFound';
+import {ProductNotFound} from '../components/ProductNotFound/ProductNotFound';
 
 export const Product = () => {
     const {id} = useParams()
@@ -10,7 +10,7 @@ export const Product = () => {
     return (
         <>
             <div className="product-container">
-                {product ? <ProductInfo product={product}/> : <NotFound/>}
+                {product ? <ProductInfo product={product}/> : <ProductNotFound/>}
             </div>
         </>
     )

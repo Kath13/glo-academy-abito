@@ -48,6 +48,10 @@ body {
   flex-grow: 1;
 }
 
+.content-main__container {
+
+}
+
 .content-side {
   width: 260px;
   min-width: 260px;

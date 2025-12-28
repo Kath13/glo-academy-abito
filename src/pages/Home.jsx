@@ -8,7 +8,7 @@ export const Home = () => {
     console.log(context.products);
     return (
         <>
-            <div className="content-main">
+            <div className="content-main__container">
                 <h2 className="content-main__title">
                     Рекомендации для вас
                 </h2>
