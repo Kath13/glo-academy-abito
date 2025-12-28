@@ -5,7 +5,8 @@ export const cardArray = [
         price: 170,
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание товара'
     },
     {
         id: 1,
@@ -13,7 +14,8 @@ export const cardArray = [
         price: 171,
         address: 'Казань, р-н Вахитовский 1',
         date: '11 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание первого товара'
     },
     {
         id: 2,
@@ -21,7 +23,8 @@ export const cardArray = [
         price: 172,
         address: 'Казань, р-н Вахитовский 2',
         date: '12 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание второго товара'
     },
     {
         id: 3,
@@ -29,7 +32,8 @@ export const cardArray = [
         price: 173,
         address: 'Казань, р-н Вахитовский 3',
         date: '13 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание третьего товара'
     },
     {
         id: 4,
@@ -37,7 +41,8 @@ export const cardArray = [
         price: 174,
         address: 'Казань, р-н Вахитовский 4',
         date: '14 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание четвертого товара'
     },
     {
         id: 5,
@@ -45,7 +50,8 @@ export const cardArray = [
         price: 175,
         address: 'Казань, р-н Вахитовский 5',
         date: '15 июля 11:39',
-        imageURL: 'card-img.png'
+        imageURL: 'card-img.png',
+        description: 'Описание пятого товара'
     },
 ]
 

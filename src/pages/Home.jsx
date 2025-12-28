@@ -23,6 +23,7 @@ export const Home = () => {
                                         cardArray.map((card) => (
                                             <Card
                                                 key={card.id}
+                                                id={card.id}
                                                 title={card.title}
                                                 price={card.price}
                                                 address={card.address}
