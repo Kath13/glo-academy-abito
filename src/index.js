@@ -4,11 +4,17 @@ import './index.css';
 import {Home} from './pages/Home';
 import {createBrowserRouter} from 'react-router';
 import {RouterProvider} from 'react-router/dom';
+import {Product} from './pages/Product';
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
+    },
+
+    {
+        path: "/product",
+        element: <Product />,
     },
 ]);
 

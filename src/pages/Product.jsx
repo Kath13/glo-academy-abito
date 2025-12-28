@@ -17,7 +17,7 @@ export const Product = () => {
                                     <h3 className="content-product__title">
                                         Электросамокат kugoo Gx
                                     </h3>
-                                    <img className="content-product__img" src="public/image/product.png"
+                                    <img className="content-product__img" src="/image/product.png"
                                          alt="Product image"/>
                                     <div className="content-product__desc">
                                         <p>Продаю не спеша самокат в хорошем состоянии.</p>

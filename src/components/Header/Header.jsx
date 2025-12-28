@@ -5,7 +5,7 @@ export const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header-box">
-                    <a href="#!" className="header-logo">
+                    <a href="/" className="header-logo">
                         <img src="/image/logo.svg" alt="Abito logotype"/>
                         <span>Abito</span>
                     </a>

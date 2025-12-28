@@ -3,7 +3,7 @@ import './Card.css'
 export const Card = ({title, price, address, date, imageURL}) => {
     return (
         <>
-            <a href="/product.html" className="card">
+            <a href="/product" className="card">
                 <div className="card--img">
                     <img src={`/image/${imageURL}`} alt={`Изображение товара ${title}`}/>
                 </div>
