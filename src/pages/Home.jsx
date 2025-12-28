@@ -1,7 +1,11 @@
 import {Card} from '../components/Card/Card';
-import {cardArray} from '../constants';
+import {useOutletContext} from 'react-router';
 
 export const Home = () => {
+
+    const context = useOutletContext();
+
+    console.log(context.products);
     return (
         <>
             <div className="content-main">
@@ -10,7 +14,7 @@ export const Home = () => {
                 </h2>
                 <div className="content-main__list">
                     {
-                        cardArray.map((card) => (
+                        context.products ? context.products.map((card) => (
                             <Card
                                 key={card.id}
                                 id={card.id}
@@ -21,6 +25,8 @@ export const Home = () => {
                                 imageURL={card.imageURL}
                             />
                         ))
+                            :
+                            'No products found.'
                     }
                 </div>
             </div>
