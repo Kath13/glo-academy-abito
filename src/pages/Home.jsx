@@ -3,23 +3,14 @@ import {Card} from '../components/Card/Card';
 import {cardArray} from '../constants';
 import {Footer} from '../components/Footer/Footer';
 import {Services} from '../components/Services/Services';
+import {Search} from '../components/Search/Search';
 
 export const Home = () => {
     return (
         <>
             <Header />
             <main>
-                <section className="search">
-                    <div className="container">
-                        <div className="search-box">
-                            <input type="text" placeholder="Поиск по объявлениям"/>
-                            <button className="btn btn-primary search-btn">
-                                <img src="/image/search.svg" alt="Search" className="search-btn__icon"/>
-                                <span className="search-btn__text">Найти</span>
-                            </button>
-                        </div>
-                    </div>
-                </section>
+                <Search />
                 <section className="content">
                     <div className="container">
                         <div className="content-box">
